@@ -4,13 +4,13 @@
   </head>
   <body>
     <?php
-  	$strDbName = 'd4upkaqv1a0h6k';
-	$strHost = 'ec2-174-129-212-133.compute-1.amazonaws.com';
-	$strPort = '5432';
-	$strUser = 'tyaypcjudjvlvv';
-	$strPass = '2Lv-0uNgjILBlgcx-Qt3aX2sbe';
-	$strSSLMode = 'require';
     function getStrPgConnection(){
+  		$strDbName = 'd4upkaqv1a0h6k';
+        $strHost = 'ec2-174-129-212-133.compute-1.amazonaws.com';
+        $strPort = '5432';
+        $strUser = 'tyaypcjudjvlvv';
+        $strPass = '2Lv-0uNgjILBlgcx-Qt3aX2sbe';
+        $strSSLMode = 'require';
       	$strPgConnection = 'dbname='.$strDbName.' host='.$strHost.' port='.$strPort.' ';	
         $strPgConnection .= 'user='.$strUser.' password='.$strPass.' sslmode='.strSSLMode;
       	return $strPgConnection;
