@@ -11,8 +11,8 @@
 	$strPass = '2Lv-0uNgjILBlgcx-Qt3aX2sbe';
 	$strSSLMode = 'require';
     function getStrPgConnection(){
-      	$strPgConnection = 'dbname='.$strDbName.' host='.$strDbName.' port='.$strDbName.' ';	
-        $strPgConnection .= 'user='.$strDbName.' password='.$strDbName.' sslmode='.strSSLMode;
+      	$strPgConnection = 'dbname='.$strDbName.' host='.$strHost.' port='.$strPort.' ';	
+        $strPgConnection .= 'user='.$strUser.' password='.$strPass.' sslmode='.strSSLMode;
     }
 	$db = pg_connect(pgConnectionStr());
 	if(!$db){
