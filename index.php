@@ -12,7 +12,7 @@
         $strPass = '2Lv-0uNgjILBlgcx-Qt3aX2sbe';
         $strSSLMode = 'require';
       	$strPgConnection = 'dbname='.$strDbName.' host='.$strHost.' port='.$strPort.' ';	
-        $strPgConnection .= 'user='.$strUser.' password='.$strPass.' sslmode='.strSSLMode;
+        $strPgConnection .= 'user='.$strUser.' password='.$strPass.' sslmode='.$strSSLMode;
       	return $strPgConnection;
     }
 	echo getStrPgConnection();
