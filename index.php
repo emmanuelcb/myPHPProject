@@ -4,7 +4,6 @@
   </head>
   <body>
     <?php
-  	echo '<p>'.pgConnectionStr().'Hello World</p>';
     function pgConnectionStr(){
   		$pgConnectionStr = "dbname=devpm0vpe3687n ";
   		$pgConnectionStr .= "host=ec2-54-243-42-108.compute-1.amazonaws.com ";
@@ -18,6 +17,8 @@
 	if(!$db){
     	echo "Database connection error.";
         exit;
+    }else{
+    	echo '<p>Hello World</p>';
     }
     ?>
   </body>
