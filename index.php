@@ -13,6 +13,7 @@
     function getStrPgConnection(){
       	$strPgConnection = 'dbname='.$strDbName.' host='.$strHost.' port='.$strPort.' ';	
         $strPgConnection .= 'user='.$strUser.' password='.$strPass.' sslmode='.strSSLMode;
+      	return $strPgConnnection;
     }
 	$db = pg_connect(pgConnectionStr());
 	if(!$db){
