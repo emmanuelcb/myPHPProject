@@ -15,7 +15,7 @@
         $strPgConnection .= 'user='.$strUser.' password='.$strPass.' sslmode='.strSSLMode;
       	return $strPgConnnection;
     }
-	$db = pg_connect(pgConnectionStr());
+	$db = pg_connect(getStrPgConnection());
 	if(!$db){
     	echo "Database connection error.";
         exit;
